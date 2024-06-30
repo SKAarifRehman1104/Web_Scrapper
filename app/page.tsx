@@ -3,6 +3,7 @@ import Searchbar from "@/components/Searchbar"
 import Image from "next/image"
 import { getAllProducts } from "@/lib/actions"
 import ProductCard from "@/components/ProductCard"
+import Link from "next/link"
 
 const Home = async () => {
   const allProducts = await getAllProducts();
@@ -20,6 +21,7 @@ const Home = async () => {
                 width={16}
                 height={16}
               />
+              <Link href = "https://www.amazon.in/">Amazon Website</Link>
             </p>
 
             <h1 className="head-text">
